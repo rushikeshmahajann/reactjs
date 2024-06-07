@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import 'boxicons'
 
 function GenColors(){
   const [color, setColor] = useState('#000000')
@@ -27,19 +28,20 @@ function GenColors(){
 
 
   return(
-    <div className="wrapper" style={
+    <div className="wrapper h-screen w-screen overflow-hidden " style={
       {
         background: color,
         
       }}>
-      <button className="text-white" onClick={() => setTypeOfColor('hex')}>HexColor</button>
-      <button className="text-white" onClick={() => setTypeOfColor('rgb')}>RGB</button>
-      <button className="text-white" onClick={typeOfColor == 'hex' ? RandomHexColor : RandomRgbColor}>Generate {typeOfColor} color</button>
+      <button className="text-black px-2  rounded-xl mx-3 mt-2 bg-white hover:shadow-md text-2xl" onClick={() => setTypeOfColor('hex')}>HexColor</button>
+      <button className="text-black px-2 rounded-xl mx-3 bg-white hover:shadow-md text-2xl" onClick={() => setTypeOfColor('rgb')}>RGB</button>
+      <button className="text-black px-2 rounded-xl mx-3 bg-white hover:shadow-md text-2xl" onClick={typeOfColor == 'hex' ? RandomHexColor : RandomRgbColor}>Generate {typeOfColor} color</button>
 
       {/* Text for current stat */}
-      <div>
-        <h1>{typeOfColor == 'hex' ? 'Hex Color ' : 'RGB Color '}</h1>
-        <p>{color}</p>
+      <div className="">
+        <h1 className="text-3xl mt-52 bg-white">{typeOfColor == 'hex' ? 'Hex Color ' : 'RGB Color '}</h1>
+        <p className="text-3xl bg-white">{color}</p>
+        <button onClick={() => navigator.clipboard.writeText(color)} className="text-black bg-white mt-2 hover:shadow-lg rounded-sm px-2 "><box-icon name='copy'></box-icon></button>
       </div>
     </div>
   )
