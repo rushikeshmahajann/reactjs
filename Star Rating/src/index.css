@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    border: 1px solid black;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px ;
+    background: linear-gradient(45deg,rgb(37, 37, 32),rgb(73, 72, 64));
+}
+
+.active {
+    color: #ffff00;
+    
+/*     border: 1px solid black; */
+}
+
+.inactive {
+    color: white;
+}
+
+/* .FaStar{
+    -webkit-box-shadow:0px 0px 8px 5px rgba(255,255,0,0.45);
+-moz-box-shadow: 0px 0px 8px 5px rgba(255,255,0,0.45);
+box-shadow: 0px 0px 8px 5px rgba(255,255,0,0.45);
+} */
