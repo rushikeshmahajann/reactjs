@@ -1,0 +1,71 @@
+/* * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    background: linear-gradient(
+  255deg,
+  hsl(0deg 0% 100%) 0%,
+  hsl(235deg 89% 98%) 5%,
+  hsl(234deg 89% 96%) 10%,
+  hsl(234deg 88% 94%) 18%,
+  hsl(233deg 88% 93%) 28%,
+  hsl(233deg 88% 91%) 40%,
+  hsl(264deg 68% 87%) 54%,
+  hsl(301deg 48% 80%) 67%,
+  hsl(329deg 73% 78%) 80%,
+  hsl(345deg 86% 76%) 91%,
+  hsl(0deg 83% 72%) 100%
+);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+
+
+}
+.tree-view-container {
+    min-height: auto;
+    width: 350px;
+    background: rgb(34, 34, 34);
+    border-radius: 10px;
+    margin: 0 auto;
+
+  }
+  .tree-view-container:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .menu-item{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: pointer;
+      color: #fff;
+  }
+  
+  .menu-list-container {
+      list-style: none;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+
+  }
+
+li {
+    color: white;
+    background: ;
+}
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+.list-item span{
+    transform: translateY(10px);
+    padding-right: 20px
+}
