@@ -1,24 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-html.lenis, html.lenis body {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-smooth iframe {
-  pointer-events: none;
-}
 
 
 * {
@@ -41,7 +22,7 @@ body {
   color: #544f49;
 }
 main {
-  width: 80vw;
+  width: 70vw;
   margin: 0 auto;
 
 }
@@ -58,7 +39,7 @@ article{
   
 }
 img{
-  width: 80vw;
+  width: 70vw;
   height: auto;
   border-radius: 7px;
 }

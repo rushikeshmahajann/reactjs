@@ -10,7 +10,7 @@ const onChangeBtn =(e) =>{
         darkTheme()
     }else{
         lightTheme()
-    }
+    } 
 }
     return (
         <label className="relative inline-flex items-center cursor-pointer">
