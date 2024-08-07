@@ -13,8 +13,7 @@ function App() {
   let newArr = [1, 2, 3, 4];
   return (
     <>
-      <Card />
-      <Card username="rushi" />
+
     </>
   );
 }
